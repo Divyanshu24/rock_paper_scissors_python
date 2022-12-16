@@ -41,21 +41,9 @@ s = '''
 
 choice = {1:r, 2:p, 3:s}
 
-def choose():
-    pl = input("\nEnter your choice\n1. Press '1' for Rock.\n2. Press '2' for Paper.\n3. Press '3' for Scissors.\n")
-    
-    while (ord(pl) > 51) or (ord(pl) < 49):
-        print("\nWRONG CHOICE!!!!\n")
-        pl = input("\nEnter your choice\n1. Press '1' for Rock.\n2. Press '2' for Paper.\n3. Press '3' for Scissors.\n")
-        
-    return int(pl)
+def play(j):
 
-
-# pl = int(input("Enter your choice\n1. Press '1' for Rock.\n2. Press '2' for Paper.\n3. Press '3' for Scissors."))
-
-def play():
-
-    player = choose()
+    player = j
 
     print(choice[player])
     
@@ -76,3 +64,8 @@ def play():
         sc = loose()
     
     return sc
+
+def ext(sc):
+    print(f"\nThanks for playing with us and your score is {sc}.")
+    input(("press enter"))
+    exit()
