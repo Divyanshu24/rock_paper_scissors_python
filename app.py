@@ -1,4 +1,5 @@
 import random
+from divyanshu import div
 
 sc = 0
 
@@ -9,6 +10,7 @@ def win():
 
 def loose():
     print("\nYou loose mutthi 🤦‍♂️😜😂😂😂\n")
+    div()
     return -1
 
 
